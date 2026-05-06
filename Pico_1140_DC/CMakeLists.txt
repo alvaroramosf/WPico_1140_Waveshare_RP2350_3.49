@@ -14,7 +14,7 @@ if (TARGET tinyusb_device)
     add_executable(Pico_1140 avr11.cxx disasm.cxx getline.cxx kb11.cxx kl11.cxx kt11.cxx kw11.cxx lp11.cxx pc11.cxx Pico_1140.cxx rk11.cxx rl11.cxx unibus.cxx dl11.cxx fp11.cxx hw_config.c)
 
     # pull in common dependencies
-    target_link_libraries(Pico_1140 pico_stdlib FatFs_SPI)
+    target_link_libraries(Pico_1140 pico_stdlib FatFs_SPI hardware_clocks)
 
     # enable usb output, disable uart output
     pico_enable_stdio_usb(Pico_1140 1)

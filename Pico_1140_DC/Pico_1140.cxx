@@ -1,3 +1,4 @@
+#include "hardware/clocks.h"
 
 #define CFG_TUD_VENDOR 1
 #define PICO_STDIO_ENABLE_CRLF_SUPPORT 0
